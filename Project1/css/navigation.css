@@ -3,12 +3,14 @@
     background-color: #393f4d;
     margin-top: -20px;
    animation: nav-load 300ms ease-in;
+   text-transform: uppercase;
+   font-weight: bold;
 }
 #navigation li{
    
    display: inline-block;
    color: white;
-   font-size: 21px;
+   font-size: 19px;
    padding: 24px;
 }
 #navigation ul :nth-child(5){
