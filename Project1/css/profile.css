@@ -5,6 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     height: 450px;
+    border: inset;
 }
 #profile-section img{
     height: 236px;
@@ -12,4 +13,37 @@
     margin-left: 47px;
     
     margin-top: 68px;
+}
+#profile-section h1{
+ color: #F1B24A;
+ float: left;
+ margin-top: 35%;
+ margin-left: -164px;
+ font-size: 18px;
+
+}
+.logout-orders{
+    padding-top: 150px;
+}
+.logout-orders p{
+ color: #F1B24A;
+ font-size: 23px;
+    font-weight: bold;
+}
+.logout-orders button{
+    margin-top: 76px;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #F1B24A;
+    color: white;
+    border-radius: 30px;
+    border:hidden;
+    width: 200px;
+}
+.logout-orders button:hover{
+
+    transition: 0.6s;
+    background-color: white;
+    color: black;
+    box-shadow:  0px 10px 5px #F1B24A;
 }

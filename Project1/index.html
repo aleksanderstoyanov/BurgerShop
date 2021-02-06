@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="../Project1/css/orders.css">
     <link rel="stylesheet" href="../Project1/css/products.css">
     <link rel="stylesheet" href="../Project1/css/home.css">
+    <link rel="stylesheet" href="../Project1/css/profile.css">
 
     <script src="https://kit.fontawesome.com/1e00da35a2.js" crossorigin="anonymous"></script>
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="../node_modules/sammy/lib/sammy.js"></script>
     <script src="../node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
-    <script src="./app.js" type="module"></script>
+    <!-- <script src="./app.js" type="module"></script> -->
     <script src="../Project1/events/orders.js"></script>
 
 
@@ -31,7 +32,7 @@
 <body>
 
     <main id="root">
-        <!-- <nav id="navigation">
+        <nav id="navigation">
 
             <ul id="nav-container">
 
@@ -51,24 +52,33 @@
                 <li><i class="fas fa-shopping-cart" id="cart" onclick="solve()"></i></li>
                 <li><i class="fas fa-user-circle"></i></li>
             </ul>
-        </nav> -->
-        <!-- <section id="orders">
+        </nav> 
+        <section id="orders">
             <h1>Current orders</h1>
 
             <div class="order">
-                <p class="productOrder">French fries</p>
-                <p class="productPrice">$2.72</p>
+                <div class="product-and-price">
+                    <p class="productOrder">French fries</p>
+                    <p class="productPrice">$2.72</p>
+                </div>
+              
+            </div>
+            <div class="order">
+                <div class="product-and-price">
+                    <p class="productOrder">Coca Cola</p>
+                    <p class="productPrice">$1.27</p>
+                </div>
+               
+               
 
             </div>
             <div class="order">
-                <p class="productOrder">Coca Cola</p>
-                <p class="productPrice">$1.27</p>
-
-            </div>
-            <div class="order">
-                <p class="productOrder">Burger</p>
-                <p class="productPrice">$2.35</p>
-
+                <div class="product-and-price">
+                    <p class="productOrder">Clasic burger</p>
+                    <p class="productPrice">$2.35</p>
+                </div>
+               
+                
             </div>
 
 
@@ -78,12 +88,14 @@
                 <div class="total">
                     <p class="subtotal">Subtotal</p>
                     <p class="totalPrice">$6.34</p>
+                   
                 </div>
 
                 <div class="total">
 
                     <p class="subtotal">Shipping</p>
                     <p class="totalPrice">None</p>
+
                 </div>
                 <hr>
                 <div class="total">
@@ -95,9 +107,9 @@
 
 
             <button>Checkout</button>
-        </section> -->
+        </section> 
 
-<!-- 
+
         <section id="burger-article">
          
             <div id="home">
@@ -108,10 +120,10 @@
             </div>
 
 
-        </section> -->
+        </section> 
 
 
-        <!-- <div class="loginRegister-form">
+       <div class="loginRegister-form">
             <form action="">
                 <i class="fas fa-user" style="color: white;"></i>
                 <input type="text" value="" name="username" placeholder="Username">
@@ -239,6 +251,26 @@
 
 
         </div>
+
+        <div id="profile-section">
+         <section>
+             <div class="profileWithUser">
+                 <article>
+                     <img src="./img/clipart915439.png" alt="">
+                     <h1>alexander</h1>
+                 </article>
+                
+                 <article class="logout-orders">
+                     <p>Number of orders: 1</p>
+                     <a href="#"><button>Logout</button></a>
+                 </article>
+               
+             </div>
+             
+         </section>
+        </div>
+
+
         <footer>
             <p> ©️ All copyrights reserved</p>
 
@@ -250,7 +282,7 @@
 
             </div>
 
-        </footer> -->
+        </footer>
     </main>
 
 

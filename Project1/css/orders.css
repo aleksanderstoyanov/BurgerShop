@@ -2,8 +2,8 @@
     position: absolute;
     background-color: #393f4d;
     float: right;
-    width: 315px;
-    height: 680px;
+    width: 331px;
+    height: 735px;
     margin-top: -15px;
     border: inset;
     
@@ -86,4 +86,10 @@ hr{
 #overallPrice{
     font-weight: bold;
     font-size: 19px;
+}
+.productOrder{
+    margin-right: 200px;
+}
+.product-and-price{
+    display: inline-flex;
 }
