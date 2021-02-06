@@ -1,0 +1,84 @@
+#orders{
+    position: absolute;
+    background-color: #393f4d;
+    float: right;
+    width: 315px;
+    height: 680px;
+    margin-top: -15px
+
+}
+#orders li{
+    color: white;
+}
+#orders h1{
+    font-family: Mont;
+    text-align: center;
+    color: white;
+    padding-bottom: 37px;
+}
+.total{
+    color: white;
+    display: inline-flex;
+}
+.order{
+    color: white;
+    text-align: center;
+}
+.subtotal{
+    margin-left: 6px;
+    margin-right: 190px;
+}
+.totalPrice{
+    float: right;
+}
+.productOrder{
+    white-space: nowrap;
+    margin-left: 6px;
+    margin-right: 190px;
+    font-weight: bold;
+    float: left;
+}
+.productPrice{
+    margin-left: -33px;
+    float: right;
+    font-weight: bold;
+}
+#totalSection{
+    font-weight: bold;
+    margin-top: 113px
+}
+
+#orders button{
+    background-color: #F1B24A;
+    color: white;
+    margin-left: 76px;
+    margin-top: 61px;
+    width: 160px;
+    height: 40px;
+    font-size: 19px;
+    border-radius: 14px;
+    border: hidden;
+}
+#orders button:hover{
+    transition: 0.6s;
+    background-color: greenyellow;
+    color: white;
+    box-shadow:  0px 3px 3px greenyellow;
+}
+hr{  
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 95%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+#totalName{
+    margin-left: 13px;
+    font-weight: bold;
+    font-size: 19px;
+}
+#overallPrice{
+    font-weight: bold;
+    font-size: 19px;
+}

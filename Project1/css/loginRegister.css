@@ -1,0 +1,54 @@
+.loginRegister-form input{
+    border: none;
+  background-color: whitesmoke;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 30px;
+}
+.loginRegister-form{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.199) ;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    
+}
+.loginRegister-form form{
+ width: 199px;
+    display: inline-grid;
+}
+.loginRegister-form button{
+    margin-top: 76px;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #df3139;
+    color: white;
+    border-radius: 30px;
+    border:hidden;
+}
+.loginRegister-form i{
+    margin-top: 40px;
+    /* width: 46px; */
+    font-size: 50px;
+    color: white;
+   
+    
+}
+.loginRegister-form button:hover{
+
+    transition: 0.6s;
+    background-color: white;
+    color: black;
+    box-shadow:  0px 10px 5px #df3139;
+}
+.loginRegister-form h1{
+    font-size: 27px;
+    color: white;
+    font-family: courier;
+}
+.loginRegister-form a{
+    color: white;
+    margin-top: 45px;
+
+}

@@ -1,0 +1,15 @@
+body{
+    background-color: #1A1A1D;
+    font-family:Mont
+}
+
+@font-face{
+    font-family: 'My-Font';
+    src: url('./fonts/PantonRustHeavy-GrSh.ttf');
+}
+@font-face{
+    font-family: 'Mont';
+    
+    src: url('./fonts/Mont-ExtraLightDEMO.otf');
+}
+

@@ -1,0 +1,27 @@
+
+<section id="burger-article">
+         <div class="spinner-1" id="spinner"></div>
+            <div id="home">
+                <div id="burger-intro">
+                    <img src="./img/PinClipart.com_fast-food-restaurant-clipart_1771958.png" alt="">
+                </div>
+                <a href="#/home"><button id="burger-button">Click me</button></a>
+            </div>
+
+
+        </section>
+<script>
+     let section=document.getElementById("burger-article");
+    
+    section.classList.add("spinner-1");
+    let intro=document.getElementById("home");
+   let spinner=document.getElementById('spinner');
+  
+   intro.style.display='none';
+
+    setTimeout(()=>{
+        spinner.remove();
+     intro.style.display='block';
+     section.classList.remove('spinner-1');
+    },4500)
+</script>
