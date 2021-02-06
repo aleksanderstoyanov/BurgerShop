@@ -4,15 +4,12 @@
     float: right;
     width: 315px;
     height: 680px;
-    margin-top: -15px
+    margin-top: -15px;
+    border: inset;
     
 
 }
-#orders section{
-    border: inset;
 
-
-}
 #orders li{
     color: white;
     
