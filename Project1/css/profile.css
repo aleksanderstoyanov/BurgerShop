@@ -1,0 +1,15 @@
+#profile-section{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.199) ;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+}
+#profile-section image{
+    height: 236px;
+    float: left;
+    margin-left: 47px;
+    
+    margin-top: 68px;
+}
