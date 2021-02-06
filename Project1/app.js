@@ -33,6 +33,9 @@ const app = Sammy('#root', function (context) {
     this.get('#/drinks', function (context) {
         context.loadPartials(partials).partial('./templates/drinks.hbs');
     })
+    this.get('#/profile',function(context){
+        context.loadPartials(partials).partial('./templates/profile.hbs');
+    })
 
 });
 
