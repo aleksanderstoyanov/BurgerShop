@@ -1,41 +1,26 @@
+import { loadHome } from "../views/home.js";
+import { loadIntro } from "../views/intro.js";
+import { loadBurgers } from "../views/menu/burgers.js";
+import { loadDrinks } from "../views/menu/drinks.js";
+import { loadMenu } from "../views/menu/menu.js";
+import { loadLogin } from "../views/users/login.js";
+import { loadRegister } from "../views/users/register.js";
+import {loadProfile} from '../views/users/profile.js';
+
+
 const app = Sammy('#root', function (context) {
     this.use('Handlebars', 'hbs')
-    const partials = {
-        header: './templates/header.hbs',
-        footer: './templates/footer.hbs',
-        orders: './templates/orders.hbs'
-    }
 
-    this.get('#/intro', function (context) {
-        context.loadPartials(partials).partial('./templates/intro.hbs');
-     
-        console.log(context);
-       
-    })
-    this.get('#/home', function (context) {
-        context.loadPartials(partials).partial('./templates/home.hbs');
-    })
 
-    this.get('#/register', function (context) {
-        context.loadPartials(partials).partial('./templates/register.hbs');
-    })
-
-    this.get('#/login', function (context) {
-        context.loadPartials(partials).partial('./templates/login.hbs');
-    })
-
-    this.get('#/menu', function (context) {
-        context.loadPartials(partials).partial('./templates/menu.hbs');
-    })
-    this.get('#/burgers', function (context) {
-        context.loadPartials(partials).partial('./templates/burgers.hbs');
-    })
-    this.get('#/drinks', function (context) {
-        context.loadPartials(partials).partial('./templates/drinks.hbs');
-    })
-    this.get('#/profile',function(context){
-        context.loadPartials(partials).partial('./templates/profile.hbs');
-    })
+    this.get('#/intro',loadIntro);
+    this.get('#/home',loadHome);
+    this.get('#/register',loadRegister);
+    this.get('#/login',loadLogin);
+    this.get('#/menu',loadMenu);
+    this.get('#/burgers',loadBurgers);
+    this.get('#/drinks',loadDrinks);
+    this.get('#/profile',loadProfile);
+ 
 
 });
 
