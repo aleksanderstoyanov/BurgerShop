@@ -1,35 +1,37 @@
-  {{>header}}
+{{>header}}
+{{#if loggedIn}}
 {{>orders}}
-  <div id="home-section">
-           
-                
-                <h1 class="home-info">Best burgers in town</h1>
-                <p class="home-info">Come and try our new burgers that will satisfy your needs</p>
+{{/if}}
+<div id="home-section">
 
 
-                <div id="menus">
-                   <a href="#/burgers"> <input type="submit" value="Burgers"></a>
-                  <a href="#/drinks"> <input type="submit" value="Drinks"></a> 
-                </div>
-                <section class="info-section">
+    <h1 class="home-info">Best burgers in town</h1>
+    <p class="home-info">Come and try our new burgers that will satisfy your needs</p>
 
-                    <ul>
-                        <li>
-                            <i class="far fa-clock"></i>
-                            <p>9:00 am - 18:00 pm</p>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <p>+359 88 2551 9934</p>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>ul.Rakovska 1356 Sofia</p>
-                        </li>
-                    </ul>
-                  
 
-                </section>
+    <div id="menus">
+        <a href="#/burgers"> <input type="submit" value="Burgers"></a>
+        <a href="#/drinks"> <input type="submit" value="Drinks"></a>
+    </div>
+    <section class="info-section">
 
-        </div>
-  {{>footer}}      
+        <ul>
+            <li>
+                <i class="far fa-clock"></i>
+                <p>9:00 am - 18:00 pm</p>
+            </li>
+            <li>
+                <i class="fas fa-phone"></i>
+                <p>+359 88 2551 9934</p>
+            </li>
+            <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>ul.Rakovska 1356 Sofia</p>
+            </li>
+        </ul>
+
+
+    </section>
+
+</div>
+{{>footer}}

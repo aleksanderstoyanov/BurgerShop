@@ -3,7 +3,7 @@
     <ul id="nav-container">
 
         <a href="#/home">
-            <li style="margin-left: 161px;">Home</li>
+            <li>Home</li>
         </a>
         <a href="#/menu">
             <li>Menu</li>
@@ -15,9 +15,10 @@
             <li>Register</li>
         </a>
 
-
+        {{#if loggedIn}}
         <li><i class="fas fa-shopping-cart" id="cart" onclick="solve()"></i></li>
        <a href="#/profile"><li><i class="fas fa-user-circle"></i></li></a> 
-       <li id="welcome-heading">Welcome, alexander</li>
+       <li id="welcome-heading">Welcome, {{username}}</li> 
+       {{/if}}
     </ul>
 </nav>

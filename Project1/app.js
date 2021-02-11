@@ -4,8 +4,10 @@ import { loadBurgers } from "../views/menu/burgers.js";
 import { loadDrinks } from "../views/menu/drinks.js";
 import { loadMenu } from "../views/menu/menu.js";
 import { loadLogin } from "../views/users/login.js";
-import { loadRegister } from "../views/users/register.js";
+import { loadRegister, postRegister } from "../views/users/register.js";
 import {loadProfile} from '../views/users/profile.js';
+import { logOutOfUser } from "../views/users/logout.js";
+
 
 
 const app = Sammy('#root', function (context) {
@@ -20,8 +22,9 @@ const app = Sammy('#root', function (context) {
     this.get('#/burgers',loadBurgers);
     this.get('#/drinks',loadDrinks);
     this.get('#/profile',loadProfile);
+    this.get('#/logOut',logOutOfUser);
  
-
+  this.post('#/register',postRegister);
 });
 
 app.run('#/intro');
