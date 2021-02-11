@@ -16,7 +16,7 @@ export function postRegister(context){
           console.log(response);
         context.app.loggedIn=true;
        localStorage.setItem('user',JSON.stringify({username,password}));
-       context.app.username=username;
+       context.app.username=usernamea;
        this.redirect('#/home');
     })
     

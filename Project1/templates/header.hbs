@@ -1,24 +1,31 @@
 <nav id="navigation">
 
     <ul id="nav-container">
-
-        <a href="#/home">
-            <li>Home</li>
-        </a>
+     
+        
+      {{#if loggedIn}}
+      <a href="#/home">
+            <li style="margin-left: 161px;">Home</li>
+        </a>  
         <a href="#/menu">
             <li>Menu</li>
         </a>
-        <a href="#/login">
+
+       
+       <a href="#"><li id="profileCart"><i class="fas fa-shopping-cart" id="cart" onclick="solve()"></i></li></a> 
+       <li id="welcome-heading">Welcome, {{username}}</li> 
+       <a href="#/profile"><li id="profileIcon"><i class="fas fa-user-circle"></i></li></a> 
+       {{else}}
+       <a href="#/home">
+            <li >Home</li>
+        </a>  
+      <a href="#/login">
             <li>Login</li>
         </a>
         <a href="#/register">
             <li>Register</li>
         </a>
-
-        {{#if loggedIn}}
-        <li><i class="fas fa-shopping-cart" id="cart" onclick="solve()"></i></li>
-       <a href="#/profile"><li><i class="fas fa-user-circle"></i></li></a> 
-       <li id="welcome-heading">Welcome, {{username}}</li> 
+    
        {{/if}}
     </ul>
 </nav>
