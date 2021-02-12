@@ -32,17 +32,21 @@
         transform: translateY(0%);
     }
 }
-#home li{
- margin-left: 161px;
-}
 #welcome-heading{
-    float: right;
-   
+    margin-left: 15px;
+    color: white;
+    font-size: 16px;
 }
-
+#welcome-heading:hover{
+    cursor: pointer;
+    color: #F1B24A;
+    transition: 0.6s;
+    text-shadow: 0px 10px 20px white;
+}
 #profileIcon{
     float: right;
 }
 #profileCart{
     float: left;
+    
 }
