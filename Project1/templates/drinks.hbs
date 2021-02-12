@@ -1,4 +1,7 @@
 {{>header}}
+ {{#if loggedIn}}
+ {{>orders}}
+ {{/if}}
 <div id="products-container">
     <h1>Drinks</h1>
     {{#each drinks}}
