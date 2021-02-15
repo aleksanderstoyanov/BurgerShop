@@ -5,15 +5,28 @@ export async function loadHome(context){
      const orders=context.app.orders=[];
      let sum=0;
     context.app.totalPrice=0;
-     await fetch(orderUrl).
+      fetch(orderUrl).
      then((response)=>response.json())
      .then((data)=>Object.entries(data).forEach(([key,obj])=>{
-          const order=obj;
+        
+      
+               const order=obj;
+               order['id']=key;
+               
+               orders.push(order);
+          
+               sum+=parseFloat(order.price);
+      
          
-         orders.push(order);
-         sum+=parseFloat(order.price);
-     }));
-     context.app.totalPrice=sum;
-    console.log(context.app.totalPrice);
-     context.loadPartials(partials,context.app).partial('./templates/home.hbs',context.app);
+     }))
+     .then(()=>{
+          context.app.totalPrice=sum.toFixed(2);
+   
+          context.loadPartials(partials,context.app).partial('./templates/home.hbs',context.app);
+
+     })
+     .catch(()=>{
+          context.loadPartials(partials,context.app).partial('./templates/home.hbs',context.app);
+     })
+    
 }

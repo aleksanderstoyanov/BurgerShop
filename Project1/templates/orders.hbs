@@ -4,11 +4,12 @@
             {{#each orders}}
             <div class="order">
                 <p class="productOrder">{{name}}</p>
-                <p class="productPrice">${{price}}</p>
+                <p class="productPrice">${{price}} <a href="#/delete/{{id}}"><i class="fas fa-times-circle"></i></a></p>
+               
 
             </div>
+              
           {{/each}}
-
             <div id="totalSection">
                 <hr>
                 <div class="total">
@@ -29,7 +30,6 @@
                 </div>
             </div>
 
-            
             <button>Checkout</button>
             {{else}}
             <h1>No orders yet!</h1>

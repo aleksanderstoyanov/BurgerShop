@@ -1,6 +1,5 @@
 const url='https://burger-shop-6043c-default-rtdb.europe-west1.firebasedatabase.app/burgers/.json';
 const orderUrl='https://burger-shop-6043c-default-rtdb.europe-west1.firebasedatabase.app/orders/.json'
-
 import partials from  '../partials.js';
 
 export async function loadBurgers(context){
@@ -26,11 +25,9 @@ export async function loadBurgers(context){
 export function postBurgers(context){
  const{name,price}=context.params;
 
- fetch(orderUrl,{method:'POST',body: JSON.stringify({
-
-  name,
-  price
+ fetch(orderUrl,{method:"POST",body:JSON.stringify({
+   name,
+   price
  })})
-
- context.redirect('#/home'); 
+ context.redirect('#/home');
 }

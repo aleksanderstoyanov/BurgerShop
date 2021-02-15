@@ -22,7 +22,7 @@ export async function loadDrinks(context){
 }
 export function postDrinks(context){
     const{name,price}=context.params;
-   console.log(name);
+  
     fetch(orderUrl,{method:'POST',body: JSON.stringify({
    
      name,

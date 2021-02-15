@@ -7,7 +7,7 @@ import { loadLogin, postLogin } from "../views/users/login.js";
 import { loadRegister, postRegister } from "../views/users/register.js";
 import {loadProfile} from '../views/users/profile.js';
 import { logOutOfUser } from "../views/users/logout.js";
-
+import { deleteOrder } from "../views/users/delete.js";
 
 
 const app = Sammy('#root', function (context) {
@@ -22,12 +22,13 @@ const app = Sammy('#root', function (context) {
     this.get('#/drinks',loadDrinks);
     this.get('#/profile',loadProfile);
     this.get('#/logOut',logOutOfUser);
+    this.get('#/delete/:id',deleteOrder);
 
-    
     this.post('#/register',postRegister);
     this.post('#/login',postLogin);
     this.post('#/burgers',postBurgers);
     this.post('#/drinks',postDrinks);
+    
 });
 
 app.run('#/intro');
