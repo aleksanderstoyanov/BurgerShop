@@ -22,6 +22,8 @@ const app = Sammy('#root', function (context) {
     this.get('#/drinks',loadDrinks);
     this.get('#/profile',loadProfile);
     this.get('#/logOut',logOutOfUser);
+
+    
     this.post('#/register',postRegister);
     this.post('#/login',postLogin);
     this.post('#/burgers',postBurgers);
