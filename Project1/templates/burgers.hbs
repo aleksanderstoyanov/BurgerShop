@@ -6,16 +6,20 @@
             <h1>Burgers</h1>
             {{#each burgers}}
             <hr>
+            <form action="#/burgers" method="POST">
             <div class="product">
                 <section>
                     <div class="info">
                         <h1>{{name}}</h1>
                         <h2>${{price}}</h2>
-                        <input type="submit" value="Order">
+                        <input type="text" value="{{name}}" name="name" style="display: none;">
+                        <input type="text" value="{{price}}" name="price" style="display: none;">
+                        <button type="submit" id="order-button">Order</button>
                     </div>
                 </section>
                 <img src="{{img}}" alt="">
             </div>
+            </form>
             {{/each}}
     </div>
     {{>footer}}

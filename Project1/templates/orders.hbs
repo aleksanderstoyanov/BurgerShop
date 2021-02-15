@@ -1,29 +1,19 @@
  <section id="orders">
+          {{#if orders}}
             <h1>Current orders</h1>
-
+            {{#each orders}}
             <div class="order">
-                <p class="productOrder">French fries</p>
-                <p class="productPrice">$2.72</p>
+                <p class="productOrder">{{name}}</p>
+                <p class="productPrice">${{price}}</p>
 
             </div>
-            <div class="order">
-                <p class="productOrder">Coca Cola</p>
-                <p class="productPrice">$1.27</p>
-
-            </div>
-            <div class="order">
-                <p class="productOrder">Burger</p>
-                <p class="productPrice">$2.35</p>
-
-            </div>
-
-
+          {{/each}}
 
             <div id="totalSection">
                 <hr>
                 <div class="total">
                     <p class="subtotal">Subtotal</p>
-                    <p class="totalPrice">$6.34</p>
+                    <p class="totalPrice">${{totalPrice}}</p>
                 </div>
 
                 <div class="total">
@@ -35,10 +25,14 @@
                 <div class="total">
 
                     <p class="subtotal" id="totalName">Total</p>
-                    <p class="totalPrice" id="overallPrice">$6.34</p>
+                    <p class="totalPrice" id="overallPrice">${{totalPrice}}</p>
                 </div>
             </div>
 
             
             <button>Checkout</button>
+            {{else}}
+            <h1>No orders yet!</h1>
+            <hr>
+            {{/if}}
         </section>

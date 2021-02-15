@@ -1,7 +1,7 @@
 import { loadHome } from "../views/home.js";
 import { loadIntro } from "../views/intro.js";
-import { loadBurgers } from "../views/menu/burgers.js";
-import { loadDrinks } from "../views/menu/drinks.js";
+import { loadBurgers, postBurgers } from "../views/menu/burgers.js";
+import { loadDrinks,postDrinks} from "../views/menu/drinks.js";
 import { loadMenu } from "../views/menu/menu.js";
 import { loadLogin, postLogin } from "../views/users/login.js";
 import { loadRegister, postRegister } from "../views/users/register.js";
@@ -24,6 +24,8 @@ const app = Sammy('#root', function (context) {
     this.get('#/logOut',logOutOfUser);
     this.post('#/register',postRegister);
     this.post('#/login',postLogin);
+    this.post('#/burgers',postBurgers);
+    this.post('#/drinks',postDrinks);
 });
 
 app.run('#/intro');

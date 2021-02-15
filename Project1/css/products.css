@@ -27,7 +27,7 @@
 .product img{
     width: 500px;
 }
-.info input{
+#order-button{
     font-size: 20px;
     padding: 10px;
     background-color: #F1B24A;
@@ -38,7 +38,7 @@
 
 }
 
-.info input:hover{
+#order-button:hover{
     background-color: #F1B24A;
     color: white;
     transition: 0.7s;

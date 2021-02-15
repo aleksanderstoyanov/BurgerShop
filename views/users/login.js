@@ -7,7 +7,7 @@ export function loadLogin(context){
 
 export function postLogin(context){
     const{username,password}=context.params;
-    console.log(password);
+
   auth.signInWithEmailAndPassword(username,password).then(()=>{
     localStorage.setItem('user',JSON.stringify({username,password}));
      context.app.loggedIn=true;
